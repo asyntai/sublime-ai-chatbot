@@ -1,0 +1,25 @@
+[
+    {
+        "id": "preferences",
+        "children": [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children": [
+                    {
+                        "caption": "Asyntai AI Chatbot",
+                        "children": [
+                            { "caption": "Set API Key", "command": "asyntai_set_api_key" },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": { "base_file": "${packages}/Asyntai AI Chatbot/Asyntai.sublime-settings", "default": "{\n\t$0\n}\n" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

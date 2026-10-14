@@ -1,0 +1,6 @@
+{
+    // Your Asyntai API key. Run "Asyntai: Set API Key" from the Command
+    // Palette to add it; the command checks the key before it saves it.
+    // Find the key in your Asyntai dashboard under Settings, API.
+    "api_key": ""
+}

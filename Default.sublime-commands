@@ -1,0 +1,17 @@
+[
+    { "caption": "Asyntai: Ask My Chatbot", "command": "asyntai_ask" },
+    { "caption": "Asyntai: Ask My Chatbot (New Conversation)", "command": "asyntai_ask", "args": { "new_conversation": true } },
+    { "caption": "Asyntai: Ask About Selection", "command": "asyntai_ask", "args": { "from_selection": true, "new_conversation": true } },
+    { "caption": "Asyntai: Recent Chats", "command": "asyntai_recent_chats" },
+    { "caption": "Asyntai: Leads", "command": "asyntai_leads" },
+    { "caption": "Asyntai: Tickets", "command": "asyntai_tickets" },
+    { "caption": "Asyntai: Add to Knowledge Base", "command": "asyntai_add_to_knowledge_base" },
+    { "caption": "Asyntai: Open Dashboard", "command": "asyntai_open_dashboard" },
+    { "caption": "Asyntai: Set API Key", "command": "asyntai_set_api_key" },
+    { "caption": "Asyntai: Sign Out", "command": "asyntai_sign_out" },
+    {
+        "caption": "Preferences: Asyntai Settings",
+        "command": "edit_settings",
+        "args": { "base_file": "${packages}/Asyntai AI Chatbot/Asyntai.sublime-settings", "default": "{\n\t$0\n}\n" }
+    }
+]
