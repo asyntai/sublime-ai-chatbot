@@ -32,7 +32,7 @@ PKG_DIR = os.path.dirname(HERE)
 REPO = os.path.abspath(os.path.join(PKG_DIR, "..", "..", ".."))
 PACKAGE_NAME = "Asyntai AI Chatbot"
 SHIP = [".python-version", "asyntai_ai_chatbot.py", "lib", "Default.sublime-commands", 
-        "Main.sublime-menu", "Asyntai.sublime-settings", "messages.json", "messages", "LICENSE"]
+        "Main.sublime-menu", "Asyntai AI Chatbot.sublime-settings", "messages.json", "messages", "LICENSE"]
 
 sys.path.insert(0, HERE)
 
@@ -91,7 +91,7 @@ def install(st, config):
     json.dump(config, open(os.path.join(target, "e2e_config.json"), "w", encoding="utf-8"))
     json.dump({"update_check": False, "hot_exit": "disabled", "remember_open_files": False},
               open(os.path.join(user, "Preferences.sublime-settings"), "w", encoding="utf-8"))
-    for stale in ("Asyntai.sublime-settings",):
+    for stale in ("Asyntai AI Chatbot.sublime-settings",):
         path = os.path.join(user, stale)
         if os.path.exists(path):
             os.remove(path)
@@ -140,7 +140,7 @@ def main():
     finally:
         subprocess.run(["taskkill", "/F", "/T", "/PID", str(pid)], capture_output=True)
         # Never leave the real key on disk.
-        for path in (os.path.join(target, "e2e_config.json"), os.path.join(user, "Asyntai.sublime-settings")):
+        for path in (os.path.join(target, "e2e_config.json"), os.path.join(user, "Asyntai AI Chatbot.sublime-settings")):
             if os.path.exists(path):
                 os.remove(path)
         if server:

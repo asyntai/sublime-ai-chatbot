@@ -117,17 +117,17 @@ def text(view):
 
 
 def set_key(value):
-    s = sublime.load_settings("Asyntai.sublime-settings")
+    s = sublime.load_settings("Asyntai AI Chatbot.sublime-settings")
     if value is None:
         s.erase("api_key")
     else:
         s.set("api_key", value)
     s.set("base_url", CONFIG["base_url"])
-    sublime.save_settings("Asyntai.sublime-settings")
+    sublime.save_settings("Asyntai AI Chatbot.sublime-settings")
 
 
 def key():
-    return sublime.load_settings("Asyntai.sublime-settings").get("api_key", "")
+    return sublime.load_settings("Asyntai AI Chatbot.sublime-settings").get("api_key", "")
 
 
 def buffer(window, name, body, select_all=False):

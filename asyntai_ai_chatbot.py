@@ -15,7 +15,7 @@ import sublime_plugin
 from .lib import api
 from .lib import format as fmt
 
-SETTINGS_FILE = "Asyntai.sublime-settings"
+SETTINGS_FILE = "Asyntai AI Chatbot.sublime-settings"
 MARKDOWN = "Packages/Markdown/Markdown.sublime-syntax"
 SESSION_SETTING = "asyntai_ask_session"
 MIN_KNOWLEDGE_CHARS = 10
